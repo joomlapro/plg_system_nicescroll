@@ -19,31 +19,6 @@ defined('_JEXEC') or die;
 class PlgSystemNicescroll extends JPlugin
 {
 	/**
-	 * Constructor.
-	 *
-	 * @param   object  &$subject  The object to observe.
-	 * @param   array   $config    An array that holds the plugin configuration.
-	 *
-	 * @access  protected
-	 * @since   3.1
-	 */
-	public function __construct(& $subject, $config)
-	{
-		parent::__construct($subject, $config);
-
-		$this->loadLanguage();
-
-		// Get the application.
-		$app = JFactory::getApplication();
-
-		// Save the syntax for later use.
-		if ($app->isAdmin())
-		{
-			$app->setUserState('editor.source.syntax', 'css');
-		}
-	}
-
-	/**
 	 * Method to catch the onAfterDispatch event.
 	 *
 	 * @return  boolean  True on success
@@ -61,20 +36,10 @@ class PlgSystemNicescroll extends JPlugin
 		// Get the document object.
 		$doc = JFactory::getDocument();
 
-		// Add Stylesheet.
-		if ($custom_css = trim($this->params->get('custom_css')))
-		{
-			$doc->addStyleDeclaration($custom_css);
-		}
-		else
-		{
-			JHtml::stylesheet('plg_system_nicescroll/nicescroll.css', false, true, false);
-		}
-
 		// Add JavaScript Frameworks.
 		JHtml::_('jquery.framework');
 
-		if ($this->params->get('minified'))
+		if ($this->params->get('minified', 1))
 		{
 			JHtml::script('plg_system_nicescroll/jquery.nicescroll.min.js', false, true);
 		}

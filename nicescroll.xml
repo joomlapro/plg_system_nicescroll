@@ -20,9 +20,17 @@
 		<language tag="pt-BR">pt-BR/pt-BR.plg_system_nicescroll.ini</language>
 		<language tag="pt-BR">pt-BR/pt-BR.plg_system_nicescroll.sys.ini</language>
 	</languages>
+	<media destination="plg_system_nicescroll" folder="media">
+		<folder>js</folder>
+		<filename>index.html</filename>
+	</media>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
+				<field name="minified" type="radio" class="btn-group" default="1" filter="integer" label="PLG_SYSTEM_NICESCROLL_FIELD_MINIFIED_LABEL" description="PLG_SYSTEM_NICESCROLL_FIELD_MINIFIED_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
 				<field name="cursor_color" type="color" class="inputbox" default="#999999" validate="color" label="PLG_SYSTEM_NICESCROLL_FIELD_CURSOR_COLOR_LABEL" description="PLG_SYSTEM_NICESCROLL_FIELD_CURSOR_COLOR_DESC" />
 				<field name="cursor_opacity_max" type="text" size="40" class="inputbox input-mini" filter="string" default="1" label="PLG_SYSTEM_NICESCROLL_FIELD_CURSOR_OPACITY_MAX_LABEL" description="PLG_SYSTEM_NICESCROLL_FIELD_CURSOR_OPACITY_MAX_DESC" />
 				<field name="cursor_width" type="text" size="40" class="inputbox input-mini" filter="string" default="6" label="PLG_SYSTEM_NICESCROLL_FIELD_CURSOR_WIDTH_LABEL" description="PLG_SYSTEM_NICESCROLL_FIELD_CURSOR_WIDTH_DESC" />
