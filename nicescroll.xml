@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+	<name>plg_system_nicescroll</name>
+	<author>Bruno Batista</author>
+	<creationDate>Jun 2013</creationDate>
+	<copyright>Copyright (C) 2013 AtomTech, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>bruno@atomtech.com.br</authorEmail>
+	<authorUrl>http://www.atomtech.com.br</authorUrl>
+	<version>1.0</version>
+	<description>PLG_SYSTEM_NICESCROLL_XML_DESCRIPTION</description>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<filename plugin="nicescroll">nicescroll.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_nicescroll.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_nicescroll.sys.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.plg_system_nicescroll.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.plg_system_nicescroll.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="cursor_color" type="color" class="inputbox" default="#999999" validate="color" label="PLG_SYSTEM_NICESCROLL_FIELD_CURSOR_COLOR_LABEL" description="PLG_SYSTEM_NICESCROLL_FIELD_CURSOR_COLOR_DESC" />
+				<field name="cursor_opacity_max" type="text" size="40" class="inputbox input-mini" filter="string" default="1" label="PLG_SYSTEM_NICESCROLL_FIELD_CURSOR_OPACITY_MAX_LABEL" description="PLG_SYSTEM_NICESCROLL_FIELD_CURSOR_OPACITY_MAX_DESC" />
+				<field name="cursor_width" type="text" size="40" class="inputbox input-mini" filter="string" default="6" label="PLG_SYSTEM_NICESCROLL_FIELD_CURSOR_WIDTH_LABEL" description="PLG_SYSTEM_NICESCROLL_FIELD_CURSOR_WIDTH_DESC" />
+				<field name="cursor_border" type="text" size="40" class="inputbox input-mini" filter="string" default="none" label="PLG_SYSTEM_NICESCROLL_FIELD_CURSOR_BORDER_LABEL" description="PLG_SYSTEM_NICESCROLL_FIELD_CURSOR_BORDER_DESC" />
+				<field name="cursor_border_radius" type="text" size="40" class="inputbox input-mini" filter="string" default="7px" label="PLG_SYSTEM_NICESCROLL_FIELD_CURSOR_BORDER_RADIUS_LABEL" description="PLG_SYSTEM_NICESCROLL_FIELD_CURSOR_BORDER_RADIUS_DESC" />
+				<field name="touch_behavior" type="radio" class="btn-group" default="0" filter="integer" label="PLG_SYSTEM_NICESCROLL_FIELD_TOUCH_BEHAVIOR_LABEL" description="PLG_SYSTEM_NICESCROLL_FIELD_TOUCH_BEHAVIOR_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
