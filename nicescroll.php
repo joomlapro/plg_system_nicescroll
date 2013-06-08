@@ -54,6 +54,7 @@ class PlgSystemNicescroll extends JPlugin
 		$cursorWidth        = $this->params->get('cursor_width', '6');
 		$cursorBorder       = $this->params->get('cursor_border', 'none');
 		$cursorBorderRadius = $this->params->get('cursor_border_radius', '7px');
+		$zindex             = $this->params->get('zindex', 9999);
 		$touchBehavior      = $this->params->get('touch_behavior', 0);
 		$touchBehavior      = $touchBehavior ? 'true' : 'false';
 
@@ -66,6 +67,7 @@ class PlgSystemNicescroll extends JPlugin
 		$script[] = '		cursorwidth: "' . $cursorWidth . '",';
 		$script[] = '		cursorborder: "' . $cursorBorder . '",';
 		$script[] = '		cursorborderradius: "' . $cursorBorderRadius . '",';
+		$script[] = '		zindex: "' . $zindex . '",';
 		$script[] = '		touchbehavior: ' . $touchBehavior;
 		$script[] = '	})';
 		$script[] = '});';

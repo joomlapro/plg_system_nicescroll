@@ -36,6 +36,7 @@
 				<field name="cursor_width" type="text" size="40" class="inputbox input-mini" filter="string" default="6" label="PLG_SYSTEM_NICESCROLL_FIELD_CURSOR_WIDTH_LABEL" description="PLG_SYSTEM_NICESCROLL_FIELD_CURSOR_WIDTH_DESC" />
 				<field name="cursor_border" type="text" size="40" class="inputbox input-mini" filter="string" default="none" label="PLG_SYSTEM_NICESCROLL_FIELD_CURSOR_BORDER_LABEL" description="PLG_SYSTEM_NICESCROLL_FIELD_CURSOR_BORDER_DESC" />
 				<field name="cursor_border_radius" type="text" size="40" class="inputbox input-mini" filter="string" default="7px" label="PLG_SYSTEM_NICESCROLL_FIELD_CURSOR_BORDER_RADIUS_LABEL" description="PLG_SYSTEM_NICESCROLL_FIELD_CURSOR_BORDER_RADIUS_DESC" />
+				<field name="zindex" type="text" size="40" class="inputbox input-mini" filter="integer" default="9999" label="PLG_SYSTEM_NICESCROLL_FIELD_ZINDEX_LABEL" description="PLG_SYSTEM_NICESCROLL_FIELD_ZINDEX_DESC" />
 				<field name="touch_behavior" type="radio" class="btn-group" default="0" filter="integer" label="PLG_SYSTEM_NICESCROLL_FIELD_TOUCH_BEHAVIOR_LABEL" description="PLG_SYSTEM_NICESCROLL_FIELD_TOUCH_BEHAVIOR_DESC">
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
